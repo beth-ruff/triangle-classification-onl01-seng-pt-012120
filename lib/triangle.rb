@@ -10,7 +10,8 @@ class Triangle
     if (@side1 + @side2 != @side3) || (@side1 <= 0) || (@side2 <= 0) || (@side3 <= 0)
       begin 
         raise TriangleError 
-      end 
+          puts error.message
+      end
           puts 
     if (@side1 == @side2) && (@side2 == @side3)
       :equilateral
